@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="gameContainer">
+    <div id="leftPanel" class="game-panel">
+      <button class="top-left-back-btn inside-game-back" onclick="window.history.back()">⬅</button>
+      <div id="board"></div>
+    </div>
+    <div id="rightPanel" class="game-panel">
+      <div id="timer">⏱ 00:00</div>
+      <div id="scoreboard"></div>
+      <button class="btn small-btn" onclick="location.reload()">Restart</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

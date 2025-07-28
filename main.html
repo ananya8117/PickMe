@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PickMe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="emoji-wallpaper" id="emojiWall"></div>
+  <div class="retro-box">
+  <div class="retro-inner-box">
+    <h1 class="retro-title">PickMe</h1>
+    <p class="retro-subtitle">Memory game? Nah, it’s a brain gym</p>
+    <p class="retro-tagline">Your memory called. It wants a rematch.</p>
+    <a href="player.html" class="start-btn">Start Game</a>
+  </div>
+</div>
+
+  <script>
+    const emojis = ["🐶", "👻", "🍕", "🧠", "💎", "🎩", "🐱", "🎮", "🧸", "🐸", "🍓", "🤖"];
+    const wall = document.getElementById("emojiWall");
+    const count = Math.ceil((window.innerWidth * window.innerHeight) / 1500); 
+
+    for (let i = 0; i < count; i++) {
+      const span = document.createElement("span");
+      span.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      wall.appendChild(span);
+    }
+  </script>
+</body>
+
+</html>

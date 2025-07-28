@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Difficulty</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="player.html" class="top-left-back-btn">⬅</a>
+  <div class="card-panel">
+    <h1 class="panel-title">Choose Difficulty</h1>
+    <div class="button-group">
+      <a id="easy" class="btn" href="#">Easy (4x4)</a>
+      <a id="medium" class="btn" href="#">Medium (6x6)</a>
+      <a id="hard" class="btn" href="#">Hard (8x5)</a>
+    </div>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const mode = urlParams.get("mode") || "1"; 
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("easy").href = `game.html?difficulty=easy&mode=${mode}`;
+      document.getElementById("medium").href = `game.html?difficulty=medium&mode=${mode}`;
+      document.getElementById("hard").href = `game.html?difficulty=hard&mode=${mode}`;
+    });
+  </script>
+
+</body>
+</html>
