@@ -36,6 +36,7 @@
 
 ## Project Structure
 
+<pre>
 PickMe/
 ├── project_images/
 │   ├── home_page.png
@@ -44,9 +45,14 @@ PickMe/
 │   ├── game_board_singleplayer_easy.png
 │   └── game_board_twoplayers_medium.png
 ├── index.html
+├── player.html
+├── difficulty.html
+├── game.html
 ├── style.css
 ├── script.js
 └── README.md
+</pre>
+
 
 ---
 
